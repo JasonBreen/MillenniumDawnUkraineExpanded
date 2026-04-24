@@ -1,0 +1,231 @@
+# Base facsimile tree inspired by Millennium Dawn's current Ukraine tree.
+focus_tree = {
+	id = ukraine_focus
+	country = {
+		factor = 0
+		modifier = { add = 15 tag = UKR }
+	}
+
+	focus = {
+		id = UKR_ukraine_elections
+		icon = ukraine_idelistic
+		x = 0
+		y = 0
+		cost = 1
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+
+		completion_reward = {
+			add_stability = 0.03
+			add_political_power = 75
+		}
+	}
+
+	focus = {
+		id = UKR_kucha_second_terms
+		icon = kuchma
+		x = 0
+		y = 1
+		cost = 1
+
+		prerequisite = { focus = UKR_ukraine_elections }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = UKR_reform_programm
+		icon = UKR_Limit_Soviets
+		x = 0
+		y = 2
+		cost = 2
+
+		prerequisite = { focus = UKR_kucha_second_terms }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_stability = -0.02
+			add_war_support = 0.03
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UKR_reform_national_guard
+		icon = ukr_inner_army
+		x = -2
+		y = 3
+		cost = 2
+
+		prerequisite = { focus = UKR_reform_programm }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+
+		completion_reward = {
+			add_army_experience = 10
+		}
+	}
+
+	focus = {
+		id = UKR_reform_vsu
+		icon = modernize_the_army
+		x = 2
+		y = 3
+		cost = 2
+
+		prerequisite = { focus = UKR_reform_programm }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+
+		completion_reward = {
+			add_army_experience = 15
+			add_war_support = 0.02
+		}
+	}
+
+	focus = {
+		id = UKR_check_and_balances
+		icon = UKR_Vague_Balance_Holds
+		x = 0
+		y = 4
+		cost = 2
+
+		prerequisite = { focus = UKR_reform_national_guard }
+		prerequisite = { focus = UKR_reform_vsu }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = UKR_const_reform
+		icon = new_democratic_constitution
+		x = 0
+		y = 5
+		cost = 3
+
+		prerequisite = { focus = UKR_check_and_balances }
+		search_filters = { FOCUS_FILTER_STABILITY }
+
+		completion_reward = {
+			add_stability = 0.08
+		}
+	}
+
+	focus = {
+		id = UKR_push_for_reforms
+		icon = anti_corruption_campaign
+		x = -2
+		y = 5
+		cost = 2
+
+		prerequisite = { focus = UKR_check_and_balances }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = UKR_seek_help_eastern_oligarch
+		icon = release_pioners_oligrach
+		x = -2
+		y = 6
+		cost = 2
+
+		prerequisite = { focus = UKR_push_for_reforms }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			add_stability = -0.01
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = UKR_seek_help_western_investors
+		icon = western_investments
+		x = 2
+		y = 6
+		cost = 2
+
+		prerequisite = { focus = UKR_const_reform }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			add_stability = 0.02
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = UKR_join_eu_market
+		icon = european_union
+		x = 2
+		y = 7
+		cost = 3
+
+		prerequisite = { focus = UKR_seek_help_western_investors }
+		search_filters = { FOCUS_FILTER_FOREIGN_POLICY }
+
+		completion_reward = {
+			add_stability = 0.03
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UKR_secure_eastern_trade
+		icon = strategic_partnership
+		x = -2
+		y = 7
+		cost = 3
+
+		prerequisite = { focus = UKR_seek_help_eastern_oligarch }
+		search_filters = { FOCUS_FILTER_FOREIGN_POLICY }
+
+		completion_reward = {
+			add_stability = 0.01
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UKR_balance_foreign_policy
+		icon = diplomatic_maneuvering
+		x = 0
+		y = 8
+		cost = 3
+
+		prerequisite = { focus = UKR_join_eu_market }
+		prerequisite = { focus = UKR_secure_eastern_trade }
+		search_filters = { FOCUS_FILTER_FOREIGN_POLICY }
+
+		completion_reward = {
+			add_stability = 0.03
+			add_war_support = 0.03
+		}
+	}
+
+	focus = {
+		id = UKR_rebuild_industry
+		icon = industrial_expansion
+		x = 0
+		y = 9
+		cost = 4
+
+		prerequisite = { focus = UKR_balance_foreign_policy }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			add_stability = 0.02
+			add_political_power = 100
+		}
+	}
+}
