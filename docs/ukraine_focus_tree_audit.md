@@ -212,6 +212,19 @@ These events are not wired to focus completion rewards yet.
 
 Event wiring should be done in a later pass once trigger/condition flow and gameplay integration are finalized.
 
+## Follow-up: pilot scripted effects
+
+Created `common/scripted_effects/UKR_milestone_scripted_effects.txt` with four pilot scripted effects, one per focus that currently fires an event:
+
+| Scripted effect | Mirrors focus | Event fired |
+|---|---|---|
+| `UKR_independence_referendum_effect` | `UKR_independence_referendum` | `ukr_expanded.1` |
+| `UKR_budapest_memorandum_effect` | `UKR_budapest_memorandum` | `ukr_expanded.2` |
+| `UKR_orange_revolution_effect` | `UKR_orange_revolution` | `ukr_expanded.3` |
+| `UKR_euromaidan_protests_effect` | `UKR_euromaidan_protests` | `ukr_expanded.4` |
+
+Each scripted effect body is an exact copy of the corresponding focus's inline `completion_reward` block (stat modifiers + `set_country_flag` + `country_event` call). The focus tree is unchanged; the effects are not wired in yet and exist only as a ready-to-use module for the next wiring pass.
+
 ## Follow-up: 2000s event scaffold
 
 Added six triggered-only Ukraine 2000s political events:
