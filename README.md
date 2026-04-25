@@ -13,6 +13,10 @@ This repository contains an expanded **Ukraine national focus tree** scaffold fo
   - EU integration and identity branch.
   - Modern defense and survival branch (COVID response → IMF stabilization → NATO path → mobilization).
 
+- `common/scripted_triggers/UKR_milestone_scripted_triggers.txt`
+  - Scripted triggers for all 21 Ukraine milestone country flags set by the focus tree.
+  - Use these as centralized condition checks in future events, decisions, scripted effects, and AI strategy plans.
+
 - `localisation/english/MD_UKR_focus_l_english.yml`
   - English localisation for all focus names and descriptions used by the base tree.
 
@@ -34,7 +38,7 @@ Provide a solid historical framework that can be iterated into a fuller, event-d
 1. Replace placeholder rewards with scripted effects and idea swaps.
 2. Add events and decisions for Orange Revolution and Euromaidan outcomes.
 3. Add AI strategy plans and branch weighting by ideology and threat level.
-4. Add country flags/scripted triggers for path gating and conflict escalation.
+4. ~~Add country flags/scripted triggers for path gating and conflict escalation.~~ ✓ Done
 5. Add additional localisation languages.
 
 ## Notes
