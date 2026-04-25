@@ -211,3 +211,17 @@ Added four triggered-only milestone country events:
 These events are not wired to focus completion rewards yet.
 
 Event wiring should be done in a later pass once trigger/condition flow and gameplay integration are finalized.
+
+## Follow-up: 2000s event scaffold
+
+Added six triggered-only Ukraine 2000s political events:
+- `ukr_expanded.20` — Kuchma's Second Term
+- `ukr_expanded.21` — The Cassette Scandal
+- `ukr_expanded.22` — Oligarchic Media Networks
+- `ukr_expanded.23` — The 2004 Presidential Election
+- `ukr_expanded.24` — Yushchenko Poisoned
+- `ukr_expanded.25` — Constitutional Reform, 2004
+
+These events are not wired to focus completion rewards yet.
+
+Because Millennium Dawn starts in 2000, this pass begins with Kuchma-era Ukraine rather than the 1990s.
