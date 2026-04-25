@@ -1,22 +1,24 @@
 # Millennium Dawn Ukraine Expanded
 
-This repository provides a starter implementation of a **Ukraine national focus tree** for Hearts of Iron IV in the Millennium Dawn style.
+This repository contains an expanded **Ukraine national focus tree** scaffold for Hearts of Iron IV in the Millennium Dawn style.
 
 ## Included Content
 
 - `common/national_focus/ukraine.txt`
-  - Base focus tree scaffold for `UKR`.
-  - Political opening path.
-  - Military reform split.
-  - East/West foreign-policy-economic split.
-  - Converging industrial rebuild ending.
+  - `ukraine_focus` tree for `UKR` with **38 focuses**.
+  - Starter political + military modernization opening.
+  - Statehood and disarmament chain (independence → Lisbon Protocol → Budapest Memorandum → 1996 constitution).
+  - Orange Revolution split (reformist mandate vs power vertical).
+  - Euromaidan split (support Maidan vs crack down).
+  - EU integration and identity branch.
+  - Modern defense and survival branch (COVID response → IMF stabilization → NATO path → mobilization).
 
 - `localisation/english/MD_UKR_focus_l_english.yml`
   - English localisation for all focus names and descriptions used by the base tree.
 
 ## Goal
 
-The current implementation is intentionally lightweight so it can be expanded into a fuller, event-driven Millennium Dawn-quality tree over time.
+Provide a solid historical framework that can be iterated into a fuller, event-driven Millennium Dawn-quality implementation.
 
 ## Design Source
 
@@ -29,10 +31,11 @@ The current implementation is intentionally lightweight so it can be expanded in
 
 ## Next Suggested Steps
 
-1. Add scripted triggers and country flags for path-specific conditions.
-2. Connect focus rewards to ideas, decisions, and events.
-3. Add AI strategy support for branch weighting.
-4. Add additional localisation languages.
+1. Replace placeholder rewards with scripted effects and idea swaps.
+2. Add events and decisions for Orange Revolution and Euromaidan outcomes.
+3. Add AI strategy plans and branch weighting by ideology and threat level.
+4. Add country flags/scripted triggers for path gating and conflict escalation.
+5. Add additional localisation languages.
 
 ## Notes
 
