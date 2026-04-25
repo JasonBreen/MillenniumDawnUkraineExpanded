@@ -225,16 +225,26 @@ Created `common/scripted_effects/UKR_milestone_scripted_effects.txt` with four p
 
 Each scripted effect body is an exact copy of the corresponding focus's inline `completion_reward` block (stat modifiers + `set_country_flag` + `country_event` call). The focus tree is unchanged; the effects are not wired in yet and exist only as a ready-to-use module for the next wiring pass.
 
-## Follow-up: 2000s event scaffold
+## Follow-up: 2000s event wiring
 
-Added six triggered-only Ukraine 2000s political events:
-- `ukr_expanded.20` — Kuchma's Second Term
-- `ukr_expanded.21` — The Cassette Scandal
-- `ukr_expanded.22` — Oligarchic Media Networks
-- `ukr_expanded.23` — The 2004 Presidential Election
-- `ukr_expanded.24` — Yushchenko Poisoned
-- `ukr_expanded.25` — Constitutional Reform, 2004
+Wired six 2000s country events into focus completion rewards in `common/national_focus/ukraine.txt`:
 
-These events are not wired to focus completion rewards yet.
+| Focus | Event wired |
+|---|---|
+| `UKR_kuchma_second_terms` | `ukr_expanded.20` |
+| `UKR_reform_programm` | `ukr_expanded.21` |
+| `UKR_push_for_reforms` | `ukr_expanded.22` |
+| `UKR_contested_2004_election` | `ukr_expanded.23` |
+| `UKR_orange_revolution` | `ukr_expanded.24` (alongside existing `ukr_expanded.3`) |
+| `UKR_const_reform` | `ukr_expanded.25` |
 
-Because Millennium Dawn starts in 2000, this pass begins with Kuchma-era Ukraine rather than the 1990s.
+Updated `common/scripted_effects/UKR_milestone_scripted_effects.txt` to add six new scripted effects mirroring each newly-wired focus reward block:
+
+| Scripted effect | Mirrors focus | Event(s) fired |
+|---|---|---|
+| `UKR_kuchma_second_terms_effect` | `UKR_kuchma_second_terms` | `ukr_expanded.20` |
+| `UKR_reform_programm_effect` | `UKR_reform_programm` | `ukr_expanded.21` |
+| `UKR_push_for_reforms_effect` | `UKR_push_for_reforms` | `ukr_expanded.22` |
+| `UKR_contested_2004_election_effect` | `UKR_contested_2004_election` | `ukr_expanded.23` |
+| `UKR_orange_revolution_2000s_effect` | `UKR_orange_revolution` | `ukr_expanded.3`, `ukr_expanded.24` |
+| `UKR_const_reform_effect` | `UKR_const_reform` | `ukr_expanded.25` |
