@@ -165,3 +165,31 @@ Introduce non-invasive script scaffolding files (empty/minimal but valid structu
 Then wire only a small pilot subset of focus rewards (e.g., 2–3 milestone focuses) to placeholder scripted effects while preserving current gameplay balance behavior.
 
 This follows the README roadmap and prepares the tree for modular expansion without changing core branch logic yet.
+
+## Follow-up: country flag wiring
+
+Added **21 milestone country flags** to `common/national_focus/ukraine.txt` completion rewards:
+
+- `UKR_completed_independence_referendum`
+- `UKR_completed_lisbon_protocol`
+- `UKR_completed_budapest_memorandum`
+- `UKR_adopted_1996_constitution`
+- `UKR_orange_revolution_happened`
+- `UKR_chose_reformist_mandate`
+- `UKR_chose_power_vertical`
+- `UKR_euromaidan_happened`
+- `UKR_supported_maidan`
+- `UKR_cracked_down_maidan`
+- `UKR_signed_eu_association_agreement`
+- `UKR_anti_corruption_drive_started`
+- `UKR_achieved_visa_free_travel`
+- `UKR_supported_church_autocephaly`
+- `UKR_covid_emergency_measures`
+- `UKR_imf_stabilization_program`
+- `UKR_sought_nato_membership`
+- `UKR_fortified_border`
+- `UKR_general_mobilization_ordered`
+- `UKR_secured_western_aid`
+- `UKR_liberation_campaign_started`
+
+These flags are intended as lightweight state markers for later integration with events, decisions, scripted triggers, scripted effects, and AI strategy plans.
