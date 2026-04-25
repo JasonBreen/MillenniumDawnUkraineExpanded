@@ -211,15 +211,3 @@ Added four triggered-only milestone country events:
 These events are not wired to focus completion rewards yet.
 
 Event wiring should be done in a later pass once trigger/condition flow and gameplay integration are finalized.
-
-## Follow-up: pilot event wiring
-
-Wired four existing milestone events into focus completion rewards in `common/national_focus/ukraine.txt`:
-
-- `UKR_independence_referendum` fires `ukr_expanded.1`
-- `UKR_budapest_memorandum` fires `ukr_expanded.2`
-- `UKR_orange_revolution` fires `ukr_expanded.3`
-- `UKR_euromaidan_protests` fires `ukr_expanded.4`
-
-Event options remain non-gameplay informational stubs for now.
-
