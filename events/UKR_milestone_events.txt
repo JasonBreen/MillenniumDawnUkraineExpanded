@@ -1,0 +1,45 @@
+add_namespace = ukr_expanded
+
+country_event = {
+	id = ukr_expanded.1
+	title = ukr_expanded.1.t
+	desc = ukr_expanded.1.d
+	is_triggered_only = yes
+
+	option = {
+		name = ukr_expanded.1.a
+	}
+}
+
+country_event = {
+	id = ukr_expanded.2
+	title = ukr_expanded.2.t
+	desc = ukr_expanded.2.d
+	is_triggered_only = yes
+
+	option = {
+		name = ukr_expanded.2.a
+	}
+}
+
+country_event = {
+	id = ukr_expanded.3
+	title = ukr_expanded.3.t
+	desc = ukr_expanded.3.d
+	is_triggered_only = yes
+
+	option = {
+		name = ukr_expanded.3.a
+	}
+}
+
+country_event = {
+	id = ukr_expanded.4
+	title = ukr_expanded.4.t
+	desc = ukr_expanded.4.d
+	is_triggered_only = yes
+
+	option = {
+		name = ukr_expanded.4.a
+	}
+}

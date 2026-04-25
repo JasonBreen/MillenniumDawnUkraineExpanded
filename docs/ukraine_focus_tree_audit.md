@@ -199,3 +199,15 @@ These flags are intended as lightweight state markers for later integration with
 Added scripted triggers for all **21** Ukraine milestone country flags in `common/scripted_triggers/UKR_milestone_scripted_triggers.txt`.
 
 These scripted triggers should be used as the standard checks in future events, decisions, scripted effects, and AI strategy plans so milestone-state conditions stay centralized and consistent instead of repeating raw `has_country_flag` checks.
+
+## Follow-up: event scaffold
+
+Added four triggered-only milestone country events:
+- `ukr_expanded.1`
+- `ukr_expanded.2`
+- `ukr_expanded.3`
+- `ukr_expanded.4`
+
+These events are not wired to focus completion rewards yet.
+
+Event wiring should be done in a later pass once trigger/condition flow and gameplay integration are finalized.
