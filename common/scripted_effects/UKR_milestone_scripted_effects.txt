@@ -29,3 +29,40 @@ UKR_euromaidan_protests_effect = {
 	set_country_flag = UKR_euromaidan_happened
 	country_event = { id = ukr_expanded.4 }
 }
+
+UKR_kuchma_second_terms_effect = {
+	add_political_power = 50
+	country_event = { id = ukr_expanded.20 }
+}
+
+UKR_reform_programm_effect = {
+	add_stability = -0.02
+	add_war_support = 0.03
+	add_political_power = 120
+	country_event = { id = ukr_expanded.21 }
+}
+
+UKR_push_for_reforms_effect = {
+	add_political_power = 75
+	add_stability = 0.02
+	country_event = { id = ukr_expanded.22 }
+}
+
+UKR_contested_2004_election_effect = {
+	add_stability = -0.03
+	add_political_power = 60
+	country_event = { id = ukr_expanded.23 }
+}
+
+UKR_orange_revolution_2000s_effect = {
+	add_war_support = 0.02
+	add_stability = -0.01
+	set_country_flag = UKR_orange_revolution_happened
+	country_event = { id = ukr_expanded.3 }
+	country_event = { id = ukr_expanded.24 }
+}
+
+UKR_const_reform_effect = {
+	add_stability = 0.08
+	country_event = { id = ukr_expanded.25 }
+}
