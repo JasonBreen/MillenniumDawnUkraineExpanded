@@ -201,6 +201,7 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.04
 			add_political_power = 40
+			set_country_flag = UKR_completed_independence_referendum
 		}
 	}
 	focus = {
@@ -226,6 +227,7 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.01
 			add_political_power = 50
+			set_country_flag = UKR_completed_lisbon_protocol
 		}
 	}
 	focus = {
@@ -239,6 +241,7 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.02
 			add_war_support = -0.01
+			set_country_flag = UKR_completed_budapest_memorandum
 		}
 	}
 	focus = {
@@ -251,6 +254,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
 			add_stability = 0.05
+			set_country_flag = UKR_adopted_1996_constitution
 		}
 	}
 
@@ -279,6 +283,7 @@ focus_tree = {
 		completion_reward = {
 			add_war_support = 0.02
 			add_stability = -0.01
+			set_country_flag = UKR_orange_revolution_happened
 		}
 	}
 	focus = {
@@ -293,6 +298,7 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.05
 			add_political_power = 100
+			set_country_flag = UKR_chose_reformist_mandate
 		}
 	}
 	focus = {
@@ -307,6 +313,7 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.03
 			add_war_support = 0.03
+			set_country_flag = UKR_chose_power_vertical
 		}
 	}
 
@@ -334,6 +341,7 @@ focus_tree = {
 		completion_reward = {
 			add_stability = -0.02
 			add_war_support = 0.02
+			set_country_flag = UKR_euromaidan_happened
 		}
 	}
 	focus = {
@@ -348,6 +356,7 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.04
 			add_political_power = 120
+			set_country_flag = UKR_supported_maidan
 		}
 	}
 	focus = {
@@ -362,6 +371,7 @@ focus_tree = {
 		completion_reward = {
 			add_war_support = 0.04
 			add_stability = -0.01
+			set_country_flag = UKR_cracked_down_maidan
 		}
 	}
 
@@ -377,6 +387,7 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.02
 			add_political_power = 75
+			set_country_flag = UKR_signed_eu_association_agreement
 		}
 	}
 	focus = {
@@ -389,6 +400,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			add_stability = 0.03
+			set_country_flag = UKR_anti_corruption_drive_started
 		}
 	}
 	focus = {
@@ -401,6 +413,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_FOREIGN_POLICY }
 		completion_reward = {
 			add_political_power = 80
+			set_country_flag = UKR_achieved_visa_free_travel
 		}
 	}
 	focus = {
@@ -413,6 +426,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
 			add_stability = 0.03
+			set_country_flag = UKR_supported_church_autocephaly
 		}
 	}
 
@@ -429,6 +443,7 @@ focus_tree = {
 		completion_reward = {
 			add_stability = -0.02
 			add_political_power = 50
+			set_country_flag = UKR_covid_emergency_measures
 		}
 	}
 	focus = {
@@ -441,6 +456,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ECONOMY }
 		completion_reward = {
 			add_stability = 0.03
+			set_country_flag = UKR_imf_stabilization_program
 		}
 	}
 	focus = {
@@ -454,6 +470,7 @@ focus_tree = {
 		completion_reward = {
 			add_war_support = 0.04
 			add_political_power = 100
+			set_country_flag = UKR_sought_nato_membership
 		}
 	}
 	focus = {
@@ -467,6 +484,7 @@ focus_tree = {
 		completion_reward = {
 			add_war_support = 0.03
 			add_army_experience = 15
+			set_country_flag = UKR_fortified_border
 		}
 	}
 	focus = {
@@ -480,6 +498,7 @@ focus_tree = {
 		completion_reward = {
 			add_war_support = 0.06
 			add_army_experience = 20
+			set_country_flag = UKR_general_mobilization_ordered
 		}
 	}
 	focus = {
@@ -493,6 +512,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 120
 			add_stability = 0.02
+			set_country_flag = UKR_secured_western_aid
 		}
 	}
 	focus = {
@@ -506,6 +526,7 @@ focus_tree = {
 		completion_reward = {
 			add_war_support = 0.08
 			add_army_experience = 25
+			set_country_flag = UKR_liberation_campaign_started
 		}
 	}
 }
