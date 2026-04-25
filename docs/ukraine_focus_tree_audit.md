@@ -225,3 +225,18 @@ Added six triggered-only Ukraine 2000s political events:
 These events are not wired to focus completion rewards yet.
 
 Because Millennium Dawn starts in 2000, this pass begins with Kuchma-era Ukraine rather than the 1990s.
+
+## Follow-up: 2000s event wiring
+
+This pass wires six existing 2000s political events into existing focus completion rewards.
+
+- `UKR_kuchma_second_terms` fires `ukr_expanded.20`
+- `UKR_reform_programm` fires `ukr_expanded.21`
+- `UKR_push_for_reforms` fires `ukr_expanded.22`
+- `UKR_contested_2004_election` fires `ukr_expanded.23`
+- `UKR_orange_revolution` fires `ukr_expanded.24`
+- `UKR_const_reform` fires `ukr_expanded.25`
+
+Notes:
+- This pass does not add gameplay effects to event options.
+- This pass does not alter branch structure or focus rewards.
