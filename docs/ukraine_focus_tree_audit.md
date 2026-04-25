@@ -193,3 +193,9 @@ Added **21 milestone country flags** to `common/national_focus/ukraine.txt` comp
 - `UKR_liberation_campaign_started`
 
 These flags are intended as lightweight state markers for later integration with events, decisions, scripted triggers, scripted effects, and AI strategy plans.
+
+## Follow-up: scripted trigger scaffolding
+
+Added scripted triggers for all **21** Ukraine milestone country flags in `common/scripted_triggers/UKR_milestone_scripted_triggers.txt`.
+
+These scripted triggers should be used as the standard checks in future events, decisions, scripted effects, and AI strategy plans so milestone-state conditions stay centralized and consistent instead of repeating raw `has_country_flag` checks.

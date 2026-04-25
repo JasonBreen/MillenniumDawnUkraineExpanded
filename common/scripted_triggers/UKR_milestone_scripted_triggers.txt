@@ -1,0 +1,83 @@
+UKR_has_completed_independence_referendum = {
+	has_country_flag = UKR_completed_independence_referendum
+}
+
+UKR_has_completed_lisbon_protocol = {
+	has_country_flag = UKR_completed_lisbon_protocol
+}
+
+UKR_has_completed_budapest_memorandum = {
+	has_country_flag = UKR_completed_budapest_memorandum
+}
+
+UKR_has_adopted_1996_constitution = {
+	has_country_flag = UKR_adopted_1996_constitution
+}
+
+UKR_has_orange_revolution_happened = {
+	has_country_flag = UKR_orange_revolution_happened
+}
+
+UKR_has_chosen_reformist_mandate = {
+	has_country_flag = UKR_chose_reformist_mandate
+}
+
+UKR_has_chosen_power_vertical = {
+	has_country_flag = UKR_chose_power_vertical
+}
+
+UKR_has_euromaidan_happened = {
+	has_country_flag = UKR_euromaidan_happened
+}
+
+UKR_has_supported_maidan = {
+	has_country_flag = UKR_supported_maidan
+}
+
+UKR_has_cracked_down_maidan = {
+	has_country_flag = UKR_cracked_down_maidan
+}
+
+UKR_has_signed_eu_association_agreement = {
+	has_country_flag = UKR_signed_eu_association_agreement
+}
+
+UKR_has_started_anti_corruption_drive = {
+	has_country_flag = UKR_anti_corruption_drive_started
+}
+
+UKR_has_achieved_visa_free_travel = {
+	has_country_flag = UKR_achieved_visa_free_travel
+}
+
+UKR_has_supported_church_autocephaly = {
+	has_country_flag = UKR_supported_church_autocephaly
+}
+
+UKR_has_covid_emergency_measures = {
+	has_country_flag = UKR_covid_emergency_measures
+}
+
+UKR_has_imf_stabilization_program = {
+	has_country_flag = UKR_imf_stabilization_program
+}
+
+UKR_has_sought_nato_membership = {
+	has_country_flag = UKR_sought_nato_membership
+}
+
+UKR_has_fortified_border = {
+	has_country_flag = UKR_fortified_border
+}
+
+UKR_has_ordered_general_mobilization = {
+	has_country_flag = UKR_general_mobilization_ordered
+}
+
+UKR_has_secured_western_aid = {
+	has_country_flag = UKR_secured_western_aid
+}
+
+UKR_has_started_liberation_campaign = {
+	has_country_flag = UKR_liberation_campaign_started
+}
