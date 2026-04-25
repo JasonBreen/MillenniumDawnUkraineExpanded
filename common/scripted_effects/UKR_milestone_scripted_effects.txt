@@ -1,0 +1,27 @@
+UKR_effect_independence_referendum_rewards = {
+	add_stability = 0.04
+	add_political_power = 40
+	set_country_flag = UKR_completed_independence_referendum
+	country_event = { id = ukr_expanded.1 }
+}
+
+UKR_effect_budapest_memorandum_rewards = {
+	add_stability = 0.02
+	add_war_support = -0.01
+	set_country_flag = UKR_completed_budapest_memorandum
+	country_event = { id = ukr_expanded.2 }
+}
+
+UKR_effect_orange_revolution_rewards = {
+	add_war_support = 0.02
+	add_stability = -0.01
+	set_country_flag = UKR_orange_revolution_happened
+	country_event = { id = ukr_expanded.3 }
+}
+
+UKR_effect_euromaidan_protests_rewards = {
+	add_stability = -0.02
+	add_war_support = 0.02
+	set_country_flag = UKR_euromaidan_happened
+	country_event = { id = ukr_expanded.4 }
+}

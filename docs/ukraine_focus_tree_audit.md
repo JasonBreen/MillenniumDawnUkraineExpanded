@@ -211,3 +211,15 @@ Added four triggered-only milestone country events:
 These events are not wired to focus completion rewards yet.
 
 Event wiring should be done in a later pass once trigger/condition flow and gameplay integration are finalized.
+
+## Follow-up: pilot scripted effects
+
+Added four pilot scripted effects in `common/scripted_effects/UKR_milestone_scripted_effects.txt`:
+- `UKR_effect_independence_referendum_rewards`
+- `UKR_effect_budapest_memorandum_rewards`
+- `UKR_effect_orange_revolution_rewards`
+- `UKR_effect_euromaidan_protests_rewards`
+
+These scripted effects intentionally mirror existing inline focus completion rewards and are **not wired into the focus tree yet**.
+
+A later task may replace inline focus rewards with these scripted effects after review.
