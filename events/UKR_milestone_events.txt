@@ -43,3 +43,69 @@ country_event = {
 		name = ukr_expanded.4.a
 	}
 }
+
+country_event = {
+	id = ukr_expanded.20
+	title = ukr_expanded.20.t
+	desc = ukr_expanded.20.d
+	is_triggered_only = yes
+
+	option = {
+		name = ukr_expanded.20.a
+	}
+}
+
+country_event = {
+	id = ukr_expanded.21
+	title = ukr_expanded.21.t
+	desc = ukr_expanded.21.d
+	is_triggered_only = yes
+
+	option = {
+		name = ukr_expanded.21.a
+	}
+}
+
+country_event = {
+	id = ukr_expanded.22
+	title = ukr_expanded.22.t
+	desc = ukr_expanded.22.d
+	is_triggered_only = yes
+
+	option = {
+		name = ukr_expanded.22.a
+	}
+}
+
+country_event = {
+	id = ukr_expanded.23
+	title = ukr_expanded.23.t
+	desc = ukr_expanded.23.d
+	is_triggered_only = yes
+
+	option = {
+		name = ukr_expanded.23.a
+	}
+}
+
+country_event = {
+	id = ukr_expanded.24
+	title = ukr_expanded.24.t
+	desc = ukr_expanded.24.d
+	is_triggered_only = yes
+
+	option = {
+		name = ukr_expanded.24.a
+	}
+}
+
+country_event = {
+	id = ukr_expanded.25
+	title = ukr_expanded.25.t
+	desc = ukr_expanded.25.d
+	is_triggered_only = yes
+
+	option = {
+		name = ukr_expanded.25.a
+	}
+}
