@@ -9,7 +9,7 @@ focus_tree = {
 	# Starter politics
 	focus = {
 		id = UKR_ukraine_elections
-		icon = ukraine_idelistic
+		icon = ukraine_idealistic
 		x = 0
 		y = 0
 		cost = 1
@@ -20,7 +20,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = UKR_kucha_second_terms
+		id = UKR_kuchma_second_terms
 		icon = kuchma
 		x = 0
 		y = 1
@@ -37,7 +37,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		cost = 2
-		prerequisite = { focus = UKR_kucha_second_terms }
+		prerequisite = { focus = UKR_kuchma_second_terms }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			add_stability = -0.02

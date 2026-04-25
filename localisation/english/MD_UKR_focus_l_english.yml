@@ -1,8 +1,8 @@
-l_english:
+﻿l_english:
  UKR_ukraine_elections: "Ukraine Elections"
  UKR_ukraine_elections_desc: "A managed election can stabilize the state and set the tone for the next phase of governance."
- UKR_kucha_second_terms: "Kuchma's Second Term"
- UKR_kucha_second_terms_desc: "Consolidate the administration and stabilize executive control."
+ UKR_kuchma_second_terms: "Kuchma's Second Term"
+ UKR_kuchma_second_terms_desc: "Consolidate the administration and stabilize executive control."
  UKR_reform_programm: "Launch Reform Program"
  UKR_reform_programm_desc: "Begin a broad political and economic reform package to modernize governance."
  UKR_reform_national_guard: "Reform the National Guard"
