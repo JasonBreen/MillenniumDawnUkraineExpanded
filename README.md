@@ -18,6 +18,15 @@ This repository provides a starter implementation of a **Ukraine national focus 
 
 The current implementation is intentionally lightweight so it can be expanded into a fuller, event-driven Millennium Dawn-quality tree over time.
 
+## Design Source
+
+- `docs/Codex Workflow Testing.docx` (in the linked GitHub main branch) is used as the historical design brief for the expanded branches:
+  - Independence and denuclearization
+  - Orange Revolution
+  - Euromaidan
+  - EU integration and identity
+  - Modern defense and survival
+
 ## Next Suggested Steps
 
 1. Add scripted triggers and country flags for path-specific conditions.

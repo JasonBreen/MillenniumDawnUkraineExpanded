@@ -1,4 +1,4 @@
-# Base facsimile tree inspired by Millennium Dawn's current Ukraine tree.
+# Expanded Ukraine focus scaffold inspired by Millennium Dawn and docs/Codex Workflow Testing.
 focus_tree = {
 	id = ukraine_focus
 	country = {
@@ -6,226 +6,506 @@ focus_tree = {
 		modifier = { add = 15 tag = UKR }
 	}
 
+	# Starter politics
 	focus = {
 		id = UKR_ukraine_elections
 		icon = ukraine_idelistic
 		x = 0
 		y = 0
 		cost = 1
-
 		search_filters = { FOCUS_FILTER_STABILITY }
-
 		completion_reward = {
 			add_stability = 0.03
 			add_political_power = 75
 		}
 	}
-
 	focus = {
 		id = UKR_kucha_second_terms
 		icon = kuchma
 		x = 0
 		y = 1
 		cost = 1
-
 		prerequisite = { focus = UKR_ukraine_elections }
 		search_filters = { FOCUS_FILTER_POLITICAL }
-
 		completion_reward = {
 			add_political_power = 50
 		}
 	}
-
 	focus = {
 		id = UKR_reform_programm
 		icon = UKR_Limit_Soviets
 		x = 0
 		y = 2
 		cost = 2
-
 		prerequisite = { focus = UKR_kucha_second_terms }
 		search_filters = { FOCUS_FILTER_POLITICAL }
-
 		completion_reward = {
 			add_stability = -0.02
 			add_war_support = 0.03
 			add_political_power = 120
 		}
 	}
-
 	focus = {
 		id = UKR_reform_national_guard
 		icon = ukr_inner_army
 		x = -2
 		y = 3
 		cost = 2
-
 		prerequisite = { focus = UKR_reform_programm }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-
 		completion_reward = {
 			add_army_experience = 10
 		}
 	}
-
 	focus = {
 		id = UKR_reform_vsu
 		icon = modernize_the_army
 		x = 2
 		y = 3
 		cost = 2
-
 		prerequisite = { focus = UKR_reform_programm }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-
 		completion_reward = {
 			add_army_experience = 15
 			add_war_support = 0.02
 		}
 	}
-
 	focus = {
 		id = UKR_check_and_balances
 		icon = UKR_Vague_Balance_Holds
 		x = 0
 		y = 4
 		cost = 2
-
 		prerequisite = { focus = UKR_reform_national_guard }
 		prerequisite = { focus = UKR_reform_vsu }
 		search_filters = { FOCUS_FILTER_POLITICAL }
-
 		completion_reward = {
 			add_stability = 0.05
 			add_political_power = 100
 		}
 	}
-
 	focus = {
 		id = UKR_const_reform
 		icon = new_democratic_constitution
 		x = 0
 		y = 5
 		cost = 3
-
 		prerequisite = { focus = UKR_check_and_balances }
 		search_filters = { FOCUS_FILTER_STABILITY }
-
 		completion_reward = {
 			add_stability = 0.08
 		}
 	}
-
 	focus = {
 		id = UKR_push_for_reforms
 		icon = anti_corruption_campaign
 		x = -2
 		y = 5
 		cost = 2
-
 		prerequisite = { focus = UKR_check_and_balances }
 		search_filters = { FOCUS_FILTER_POLITICAL }
-
 		completion_reward = {
 			add_political_power = 75
 			add_stability = 0.02
 		}
 	}
-
 	focus = {
 		id = UKR_seek_help_eastern_oligarch
 		icon = release_pioners_oligrach
 		x = -2
 		y = 6
 		cost = 2
-
 		prerequisite = { focus = UKR_push_for_reforms }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-
 		completion_reward = {
 			add_stability = -0.01
 			add_political_power = 50
 		}
 	}
-
 	focus = {
 		id = UKR_seek_help_western_investors
 		icon = western_investments
 		x = 2
 		y = 6
 		cost = 2
-
 		prerequisite = { focus = UKR_const_reform }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-
 		completion_reward = {
 			add_stability = 0.02
 			add_political_power = 50
 		}
 	}
-
 	focus = {
 		id = UKR_join_eu_market
 		icon = european_union
 		x = 2
 		y = 7
 		cost = 3
-
 		prerequisite = { focus = UKR_seek_help_western_investors }
 		search_filters = { FOCUS_FILTER_FOREIGN_POLICY }
-
 		completion_reward = {
 			add_stability = 0.03
 			add_political_power = 120
 		}
 	}
-
 	focus = {
 		id = UKR_secure_eastern_trade
 		icon = strategic_partnership
 		x = -2
 		y = 7
 		cost = 3
-
 		prerequisite = { focus = UKR_seek_help_eastern_oligarch }
 		search_filters = { FOCUS_FILTER_FOREIGN_POLICY }
-
 		completion_reward = {
 			add_stability = 0.01
 			add_political_power = 120
 		}
 	}
-
 	focus = {
 		id = UKR_balance_foreign_policy
 		icon = diplomatic_maneuvering
 		x = 0
 		y = 8
 		cost = 3
-
 		prerequisite = { focus = UKR_join_eu_market }
 		prerequisite = { focus = UKR_secure_eastern_trade }
 		search_filters = { FOCUS_FILTER_FOREIGN_POLICY }
-
 		completion_reward = {
 			add_stability = 0.03
 			add_war_support = 0.03
 		}
 	}
-
 	focus = {
 		id = UKR_rebuild_industry
 		icon = industrial_expansion
 		x = 0
 		y = 9
 		cost = 4
-
 		prerequisite = { focus = UKR_balance_foreign_policy }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-
 		completion_reward = {
 			add_stability = 0.02
 			add_political_power = 100
+		}
+	}
+
+	# Statehood and disarmament branch
+	focus = {
+		id = UKR_independence_referendum
+		icon = generic_focus_nationalism
+		x = -8
+		y = 1
+		cost = 1
+		prerequisite = { focus = UKR_ukraine_elections }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = 0.04
+			add_political_power = 40
+		}
+	}
+	focus = {
+		id = UKR_build_state_institutions
+		icon = generic_focus_national_unity
+		x = -8
+		y = 2
+		cost = 2
+		prerequisite = { focus = UKR_independence_referendum }
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_stability = 0.03
+		}
+	}
+	focus = {
+		id = UKR_lisbon_protocol
+		icon = generic_treaty
+		x = -8
+		y = 3
+		cost = 2
+		prerequisite = { focus = UKR_build_state_institutions }
+		search_filters = { FOCUS_FILTER_FOREIGN_POLICY }
+		completion_reward = {
+			add_stability = 0.01
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = UKR_budapest_memorandum
+		icon = strategic_partnership
+		x = -8
+		y = 4
+		cost = 2
+		prerequisite = { focus = UKR_lisbon_protocol }
+		search_filters = { FOCUS_FILTER_FOREIGN_POLICY }
+		completion_reward = {
+			add_stability = 0.02
+			add_war_support = -0.01
+		}
+	}
+	focus = {
+		id = UKR_constitution_1996
+		icon = new_democratic_constitution
+		x = -8
+		y = 5
+		cost = 2
+		prerequisite = { focus = UKR_budapest_memorandum }
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+
+	# Orange Revolution branch
+	focus = {
+		id = UKR_contested_2004_election
+		icon = anti_corruption_campaign
+		x = -4
+		y = 10
+		cost = 2
+		prerequisite = { focus = UKR_rebuild_industry }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = -0.03
+			add_political_power = 60
+		}
+	}
+	focus = {
+		id = UKR_orange_revolution
+		icon = generic_focus_propaganda
+		x = -4
+		y = 11
+		cost = 2
+		prerequisite = { focus = UKR_contested_2004_election }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_war_support = 0.02
+			add_stability = -0.01
+		}
+	}
+	focus = {
+		id = UKR_reformist_mandate
+		icon = democratic_reforms
+		x = -6
+		y = 12
+		cost = 3
+		prerequisite = { focus = UKR_orange_revolution }
+		mutually_exclusive = { focus = UKR_power_vertical }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = UKR_power_vertical
+		icon = generic_authoritarianism
+		x = -2
+		y = 12
+		cost = 3
+		prerequisite = { focus = UKR_orange_revolution }
+		mutually_exclusive = { focus = UKR_reformist_mandate }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = 0.03
+			add_war_support = 0.03
+		}
+	}
+
+	# Euromaidan and 2014 split
+	focus = {
+		id = UKR_suspend_eu_talks
+		icon = strategic_partnership
+		x = 4
+		y = 10
+		cost = 2
+		prerequisite = { focus = UKR_rebuild_industry }
+		search_filters = { FOCUS_FILTER_FOREIGN_POLICY }
+		completion_reward = {
+			add_stability = -0.04
+		}
+	}
+	focus = {
+		id = UKR_euromaidan_protests
+		icon = generic_focus_propaganda
+		x = 4
+		y = 11
+		cost = 2
+		prerequisite = { focus = UKR_suspend_eu_talks }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = -0.02
+			add_war_support = 0.02
+		}
+	}
+	focus = {
+		id = UKR_support_maidan
+		icon = democratic_reforms
+		x = 2
+		y = 12
+		cost = 3
+		prerequisite = { focus = UKR_euromaidan_protests }
+		mutually_exclusive = { focus = UKR_crack_down_maidan }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = 0.04
+			add_political_power = 120
+		}
+	}
+	focus = {
+		id = UKR_crack_down_maidan
+		icon = generic_authoritarianism
+		x = 6
+		y = 12
+		cost = 3
+		prerequisite = { focus = UKR_euromaidan_protests }
+		mutually_exclusive = { focus = UKR_support_maidan }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_war_support = 0.04
+			add_stability = -0.01
+		}
+	}
+
+	# EU integration and identity
+	focus = {
+		id = UKR_sign_association_agreement
+		icon = european_union
+		x = 2
+		y = 13
+		cost = 2
+		prerequisite = { focus = UKR_support_maidan }
+		search_filters = { FOCUS_FILTER_FOREIGN_POLICY }
+		completion_reward = {
+			add_stability = 0.02
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = UKR_anti_corruption_drive
+		icon = anti_corruption_campaign
+		x = 2
+		y = 14
+		cost = 2
+		prerequisite = { focus = UKR_sign_association_agreement }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = 0.03
+		}
+	}
+	focus = {
+		id = UKR_visa_free_travel
+		icon = tourism_deal
+		x = 2
+		y = 15
+		cost = 2
+		prerequisite = { focus = UKR_anti_corruption_drive }
+		search_filters = { FOCUS_FILTER_FOREIGN_POLICY }
+		completion_reward = {
+			add_political_power = 80
+		}
+	}
+	focus = {
+		id = UKR_church_autocephaly
+		icon = generic_focus_national_unity
+		x = 4
+		y = 15
+		cost = 2
+		prerequisite = { focus = UKR_anti_corruption_drive }
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_stability = 0.03
+		}
+	}
+
+	# Modern defence and survival
+	focus = {
+		id = UKR_covid_emergency
+		icon = generic_healthcare
+		x = -1
+		y = 13
+		cost = 2
+		prerequisite = { focus = UKR_euromaidan_protests }
+		prerequisite = { focus = UKR_orange_revolution }
+		search_filters = { FOCUS_FILTER_ECONOMY }
+		completion_reward = {
+			add_stability = -0.02
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = UKR_imf_stabilization
+		icon = financial_rescue
+		x = -1
+		y = 14
+		cost = 2
+		prerequisite = { focus = UKR_covid_emergency }
+		search_filters = { FOCUS_FILTER_ECONOMY }
+		completion_reward = {
+			add_stability = 0.03
+		}
+	}
+	focus = {
+		id = UKR_seek_nato_membership
+		icon = nato_focus
+		x = -1
+		y = 15
+		cost = 3
+		prerequisite = { focus = UKR_imf_stabilization }
+		search_filters = { FOCUS_FILTER_FOREIGN_POLICY }
+		completion_reward = {
+			add_war_support = 0.04
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = UKR_fortify_border
+		icon = fortification_effort
+		x = -1
+		y = 16
+		cost = 3
+		prerequisite = { focus = UKR_seek_nato_membership }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		completion_reward = {
+			add_war_support = 0.03
+			add_army_experience = 15
+		}
+	}
+	focus = {
+		id = UKR_general_mobilization
+		icon = mobilization_laws
+		x = -1
+		y = 17
+		cost = 3
+		prerequisite = { focus = UKR_fortify_border }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		completion_reward = {
+			add_war_support = 0.06
+			add_army_experience = 20
+		}
+	}
+	focus = {
+		id = UKR_secure_western_aid
+		icon = western_investments
+		x = 1
+		y = 17
+		cost = 3
+		prerequisite = { focus = UKR_general_mobilization }
+		search_filters = { FOCUS_FILTER_FOREIGN_POLICY }
+		completion_reward = {
+			add_political_power = 120
+			add_stability = 0.02
+		}
+	}
+	focus = {
+		id = UKR_liberate_territories
+		icon = military_offensive
+		x = 0
+		y = 18
+		cost = 4
+		prerequisite = { focus = UKR_secure_western_aid }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		completion_reward = {
+			add_war_support = 0.08
+			add_army_experience = 25
 		}
 	}
 }
